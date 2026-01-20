@@ -1,0 +1,12 @@
+#when user input any number than it get it is prime or not
+num=int(input("enter num:"))
+temp=1
+for i in range(2,num):
+    if num % i==0:
+        temp=1
+        print("not prime")
+        break
+    else:
+        temp=0
+if temp==0:
+        print("prime")
